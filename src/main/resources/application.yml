@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+
+jwt:
+  secret: ${JWT_SECRET:CarvajalPruebaTecnica2026ClaveSecretaSuperSeguraLarga123}
+
+microservices:
+  favorites-url: https://carvajal-favorites.onrender.com
+  productos-url: https://productos-m.onrender.com
+  historico-url: https://history-service-lbfw.onrender.com
+  notifications-url: https://notifications-vjfk.onrender.com

@@ -4,23 +4,6 @@ server:
 spring:
   application:
     name: gateway-service
-  cloud:
-    gateway:
-      mvc:
-        globalcors:
-          cors-configurations:
-            '[/**]':
-              allowedOrigins:
-                - "http://localhost:4200"
-                - "https://front-end-carvajal.onrender.com"
-              allowedMethods:
-                - GET
-                - POST
-                - PUT
-                - DELETE
-                - OPTIONS
-              allowedHeaders: "*"
-              allowCredentials: true
 
 jwt:
   secret: ${JWT_SECRET:CarvajalPruebaTecnica2026ClaveSecretaSuperSeguraLarga123}
